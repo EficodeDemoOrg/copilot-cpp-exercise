@@ -1,0 +1,108 @@
+System initialization started
+User login attempt: user='admin'
+User login successful: user='admin'
+Configuration loaded from default path
+System heartbeat check OK
+Task 'DataBackup' started
+Processing item: item_001
+Processing item: item_002
+WARN: Cache usage high: 88%
+Processing item: item_003
+System heartbeat check OK
+Data export requested: format=CSV
+User action: viewed page '/dashboard'
+Processing item: item_004
+Processing item: item_005
+Task 'DataBackup' completed successfully
+System heartbeat check OK
+User logout: user='admin'
+WARN: Low disk space on /data partition
+System heartbeat check OK
+User login attempt: user='guest'
+User login successful: user='guest'
+File uploaded: report_q1.pdf
+System heartbeat check OK
+ERROR: Cannot connect to SMTP server 'mail.internal'
+Notification sending failed
+System heartbeat check OK
+Task 'ReportGenerator' started
+Generating report section: Sales
+Generating report section: Marketing
+WARN: Data source 'LegacyDB' is slow responding
+Generating report section: Operations
+System heartbeat check OK
+Task 'ReportGenerator' finished
+File accessed: /shared/config.ini
+User action: updated profile 'guest'
+System heartbeat check OK
+ERROR: Null pointer exception during data processing
+Process crashed. Restarting...
+System initialization started
+Configuration loaded from default path
+System heartbeat check OK
+User login attempt: user='testuser'
+User login failed: user='testuser', reason='Invalid credentials'
+System heartbeat check OK
+WARN: API endpoint '/legacy/status' deprecated
+Task 'LogRotation' started
+Old logs archived.
+Task 'LogRotation' completed successfully
+System heartbeat check OK
+User action: searched for 'active projects'
+Found 5 results
+System heartbeat check OK
+ERROR: Filesystem '/data' is read-only
+Configuration save failed
+System heartbeat check OK
+Maintenance window started
+System entering maintenance mode
+System heartbeat check OK
+Database schema update applied
+Cache cleared
+System exiting maintenance mode
+Maintenance window finished
+System heartbeat check OK
+User login attempt: user='support'
+User login successful: user='support'
+System status check: All systems nominal
+System heartbeat check OK
+WARN: Certificate 'ssl.internal' expires in 10 days
+Task 'CleanupTmp' started
+Removed 15 temporary files
+Task 'CleanupTmp' completed successfully
+System heartbeat check OK
+User action: downloaded file 'archive_20250428.zip'
+Data import started from source 'ExternalAPI'
+Received 50 records
+ERROR: Record 25 has invalid format. Skipping.
+Received 50 records
+Received 30 records
+Data import finished. Imported 129 records.
+System heartbeat check OK
+WARN: Network latency high to '10.0.5.10': 120ms
+System heartbeat check OK
+User logout: user='support'
+System heartbeat check OK
+Processing background job: job_id=789
+Job 789 completed successfully
+System heartbeat check OK
+User login attempt: user='admin'
+User login successful: user='admin'
+Security scan initiated
+Scan found 0 critical vulnerabilities
+Scan completed
+System heartbeat check OK
+WARN: Using fallback data source for analytics
+Task 'UserSync' started
+Synchronized 5 new users
+Task 'UserSync' completed successfully
+System heartbeat check OK
+ERROR: Out of memory error in reporting service
+Reporting service restarting
+System heartbeat check OK
+User action: created new item 'Project Omega'
+System heartbeat check OK
+User logout: user='admin'
+System shutdown requested
+Shutting down services...
+Goodbye!

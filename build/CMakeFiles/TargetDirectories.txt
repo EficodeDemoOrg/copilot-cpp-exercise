@@ -1,0 +1,3 @@
+/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles/log_analyzer.dir
+/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles/edit_cache.dir
+/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles/rebuild_cache.dir

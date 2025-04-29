@@ -1,0 +1,55 @@
+2025-04-29 13:07:55 INFO Application starting up... Version 1.2.3
+2025-04-29 13:07:58 DEBUG Reading configuration from /etc/app/config.json
+2025-04-29 13:08:01 INFO Configuration loaded successfully. Mode: production
+2025-04-29 13:08:05 INFO Database connection pool initialized for 'main_db'.
+2025-04-29 13:08:10 INFO Network listener started on port 8080.
+2025-04-29 13:08:15 WARN Cache server 'cache.local' is not responding. Using fallback.
+2025-04-29 13:08:22 INFO Ready to accept incoming connections.
+2025-04-29 13:08:45 INFO Request received: GET /api/status from 192.168.10.5
+2025-04-29 13:08:46 DEBUG Authenticating request token...
+2025-04-29 13:08:47 INFO Request processed successfully. Status: 200 OK.
+2025-04-29 13:09:01 INFO Request received: POST /api/orders from 192.168.10.8
+2025-04-29 13:09:03 DEBUG Validating order data... OrderID: ord_551
+2025-04-29 13:09:05 ERROR Order validation failed for OrderID: ord_551. Reason: Missing 'customer_id'.
+2025-04-29 13:09:06 INFO Request processed with error. Status: 400 Bad Request.
+2025-04-29 13:09:33 INFO Request received: GET /api/products?category=electronics from 192.168.10.5
+2025-04-29 13:09:35 DEBUG Querying database for products in category 'electronics'.
+2025-04-29 13:09:38 INFO Found 25 products. Request processed successfully. Status: 200 OK.
+2025-04-29 13:10:05 WARN Database query took longer than expected: 450ms. Query: SELECT * FROM products WHERE category='electronics'.
+2025-04-29 13:10:30 INFO Starting background job: DailyReportGenerator
+2025-04-29 13:10:32 DEBUG Fetching sales data for 2025-04-28.
+2025-04-29 13:10:45 DEBUG Aggregating data...
+2025-04-29 13:10:55 ERROR Failed to connect to reporting database 'reports_db'. Error: Connection timeout.
+2025-04-29 13:10:58 INFO Retrying connection to 'reports_db' (Attempt 1/3).
+2025-04-29 13:11:05 ERROR Connection retry failed. Error: Connection timeout.
+2025-04-29 13:11:08 INFO Retrying connection to 'reports_db' (Attempt 2/3).
+2025-04-29 13:11:15 ERROR Connection retry failed. Error: Connection timeout.
+2025-04-29 13:11:16 ERROR Background job 'DailyReportGenerator' failed: Max retries exceeded for database connection.
+2025-04-29 13:11:40 INFO Request received: GET /admin/users from 127.0.0.1
+2025-04-29 13:11:41 DEBUG Admin user 'root' authenticated.
+2025-04-29 13:11:42 INFO Request processed successfully. Status: 200 OK.
+2025-04-29 13:12:00 INFO User 'anna' logged out. Session duration: 1h 15m.
+2025-04-29 13:12:15 INFO Request received: PUT /api/products/prod_123 from 192.168.10.10
+2025-04-29 13:12:17 DEBUG Updating product 'prod_123' stock level.
+2025-04-29 13:12:19 WARN Concurrency conflict detected while updating product 'prod_123'. Retrying...
+2025-04-29 13:12:20 DEBUG Update successful on retry for product 'prod_123'.
+2025-04-29 13:12:21 INFO Request processed successfully. Status: 200 OK.
+2025-04-29 13:12:50 INFO Health check endpoint '/health' accessed. Status: OK.
+2025-04-29 13:13:00 DEBUG Performing routine cache cleanup.
+2025-04-29 13:13:05 INFO Removed 55 stale entries from cache.
+2025-04-29 13:13:30 INFO Request received: DELETE /api/orders/ord_550 from 192.168.10.5
+2025-04-29 13:13:31 ERROR User 'guest' not authorized to delete order 'ord_550'.
+2025-04-29 13:13:32 INFO Request processed with error. Status: 403 Forbidden.
+2025-04-29 13:14:00 INFO Starting background job: IndexRebuild
+2025-04-29 13:14:05 DEBUG Rebuilding index 'product_search'.
+2025-04-29 13:15:30 INFO Index 'product_search' rebuilt successfully. Duration: 85s.
+2025-04-29 13:15:31 INFO Background job 'IndexRebuild' completed.
+2025-04-29 13:15:55 INFO User 'pekka' logged in. Session: sess_789.
+2025-04-29 13:16:10 WARN Deprecated API endpoint '/v1/status' accessed by client 10.5.5.5.
+2025-04-29 13:16:33 INFO Request received: GET /api/status from 192.168.10.6
+2025-04-29 13:16:35 INFO Request processed successfully. Status: 200 OK.
+2025-04-29 13:17:01 INFO Shutting down application gracefully...
+2025-04-29 13:17:03 INFO Closing network listener...
+2025-04-29 13:17:05 INFO Waiting for background jobs to complete...
+2025-04-29 13:17:08 INFO Closing database connection pool...
+2025-04-29 13:17:10 INFO Application shut down complete.

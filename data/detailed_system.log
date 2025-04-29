@@ -1,0 +1,55 @@
+2025-04-29 13:07:52.105 INFO [Core] (1001) System starting up. Process ID: 5678. Version: 3.0.1-beta
+2025-04-29 13:07:52.531 DEBUG [ConfigLoader] (1001) Searching for configuration in /etc/sysconfig/app.yaml
+2025-04-29 13:07:52.755 INFO [ConfigLoader] (1001) Configuration file '/etc/sysconfig/app.yaml' loaded successfully.
+2025-04-29 13:07:53.110 INFO [ModuleManager] (1001) Initializing module: Database
+2025-04-29 13:07:53.560 DEBUG [Database] (1005) Connecting to database server 'pg.helsinki.prod' on port 5432.
+2025-04-29 13:07:54.020 INFO [Database] (1005) Database connection successful. Pool size: 15.
+2025-04-29 13:07:54.350 INFO [ModuleManager] (1001) Initializing module: NetworkInterface
+2025-04-29 13:07:54.880 INFO [NetworkInterface] (1010) Binding TCP listener to 0.0.0.0:7777.
+2025-04-29 13:07:55.150 INFO [NetworkInterface] (1010) Listener active. Ready for client connections.
+2025-04-29 13:07:55.500 INFO [ModuleManager] (1001) Initializing module: AuthService
+2025-04-29 13:07:55.830 INFO [AuthService] (1020) Auth module initialized. JWT secret loaded.
+2025-04-29 13:07:56.200 INFO [ModuleManager] (1001) Initializing module: WorkerPool
+2025-04-29 13:07:56.650 INFO [WorkerPool] (1030) Starting worker thread pool with 8 threads.
+2025-04-29 13:07:56.655 INFO [WorkerPool] (1031) Worker thread 1 started.
+2025-04-29 13:07:56.660 INFO [WorkerPool] (1032) Worker thread 2 started.
+2025-04-29 13:07:56.665 INFO [WorkerPool] (1033) Worker thread 3 started.
+2025-04-29 13:07:57.010 INFO [Core] (1001) System initialization complete. Startup time: 4905ms.
+2025-04-29 13:08:15.345 INFO [NetworkInterface] (1011) Accepted connection from 172.16.5.100:51234. ConnectionID: conn_1.
+2025-04-29 13:08:15.780 DEBUG [NetworkInterface] (1011) Received data packet (256 bytes) on ConnectionID: conn_1.
+2025-04-29 13:08:16.115 INFO [WorkerPool] (1031) Processing request for ConnectionID: conn_1. RequestType: Auth.
+2025-04-29 13:08:16.440 DEBUG [AuthService] (1031) Attempting authentication for user 'kaisa'. Token present.
+2025-04-29 13:08:16.890 DEBUG [AuthService] (1031) Token validated successfully for user 'kaisa'.
+2025-04-29 13:08:17.225 INFO [AuthService] (1031) User 'kaisa' authenticated via token. Request granted. ConnectionID: conn_1.
+2025-04-29 13:08:17.550 DEBUG [NetworkInterface] (1011) Sending response packet (64 bytes) on ConnectionID: conn_1.
+2025-04-29 13:09:02.111 INFO [NetworkInterface] (1012) Accepted connection from 172.16.5.101:62345. ConnectionID: conn_2.
+2025-04-29 13:09:02.555 DEBUG [NetworkInterface] (1012) Received data packet (512 bytes) on ConnectionID: conn_2.
+2025-04-29 13:09:02.988 INFO [WorkerPool] (1032) Processing request for ConnectionID: conn_2. RequestType: GetData.
+2025-04-29 13:09:03.333 DEBUG [Database] (1032) Executing query for ConnectionID: conn_2. Query: SELECT data FROM main_table WHERE id=50.
+2025-04-29 13:09:04.001 WARN [Database] (1032) Query execution time high: 668ms. ConnectionID: conn_2.
+2025-04-29 13:09:04.444 INFO [WorkerPool] (1032) Request processed for ConnectionID: conn_2.
+2025-04-29 13:09:04.888 DEBUG [NetworkInterface] (1012) Sending response packet (1024 bytes) on ConnectionID: conn_2.
+2025-04-29 13:09:10.123 INFO [NetworkInterface] (1011) Connection closed by peer. ConnectionID: conn_1. Reason: Normal closure.
+2025-04-29 13:09:35.567 INFO [Scheduler] (1002) Running scheduled task: PurgeOldSessions.
+2025-04-29 13:09:36.012 DEBUG [AuthService] (1002) Found 15 expired sessions.
+2025-04-29 13:09:36.456 INFO [AuthService] (1002) Purged 15 expired user sessions.
+2025-04-29 13:09:36.901 INFO [Scheduler] (1002) Task 'PurgeOldSessions' completed successfully.
+2025-04-29 13:10:05.333 ERROR [WorkerPool] (1033) Uncaught exception in worker thread: std::runtime_error - Failed to allocate memory. Request Details: GetData, Size=2GB.
+2025-04-29 13:10:05.777 CRITICAL [Core] (1033) Worker thread 3 crashed. Attempting restart.
+2025-04-29 13:10:06.222 INFO [WorkerPool] (1033) Worker thread 3 restarted.
+2025-04-29 13:10:15.999 INFO [NetworkInterface] (1012) Connection closed by peer. ConnectionID: conn_2. Reason: Normal closure.
+2025-04-29 13:10:40.101 TRACE [Database] (1006) Releasing connection back to pool. Pool state: 14 available / 15 total.
+2025-04-29 13:11:00.202 INFO [Telemetry] (1003) Sending heartbeat metrics to monitoring service.
+2025-04-29 13:11:00.606 DEBUG [Telemetry] (1003) Metrics package: { connections: 0, active_threads: 7, memory_usage: '512MB' }.
+2025-04-29 13:11:30.707 INFO [NetworkInterface] (1013) Accepted connection from 172.16.5.102:34567. ConnectionID: conn_3.
+2025-04-29 13:11:31.111 DEBUG [NetworkInterface] (1013) Received data packet (128 bytes) on ConnectionID: conn_3.
+2025-04-29 13:11:31.515 INFO [WorkerPool] (1034) Processing request for ConnectionID: conn_3. RequestType: Ping.
+2025-04-29 13:11:31.919 INFO [WorkerPool] (1034) Request processed for ConnectionID: conn_3.
+2025-04-29 13:11:32.323 DEBUG [NetworkInterface] (1013) Sending response packet (16 bytes) on ConnectionID: conn_3.
+2025-04-29 13:11:45.454 WARN [AuthService] (1020) Received request with expired token from 192.168.10.50. Token expiry: 2025-04-29 12:55:00.
+2025-04-29 13:12:01.888 TRACE [ConfigLoader] (1001) Checking for config file updates... No changes detected.
+2025-04-29 13:12:10.999 INFO [NetworkInterface] (1013) Connection closed by peer. ConnectionID: conn_3. Reason: Normal closure.
+2025-04-29 13:12:35.101 INFO [Scheduler] (1002) Running scheduled task: DatabaseMaintenance.
+2025-04-29 13:12:35.505 DEBUG [Database] (1007) Performing VACUUM operation on table 'event_log'.
+2025-04-29 13:13:05.808 INFO [Database] (1007) VACUUM operation completed. Duration: 30303ms.
+2025-04-29 13:13:06.212 INFO [Scheduler] (1002) Task 'DatabaseMaintenance' completed successfully.
