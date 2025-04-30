@@ -1,0 +1,61 @@
+# C++ Build files
+build/
+Debug/
+Release/
+*.o
+*.obj
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.lo
+*.la
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+*.cmake
+!CMakeLists.txt
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Generated documentation
+docs/generated/
+html/
+latex/
+
+# Dependency directories
+vcpkg/
+_vcpkg/
+deps/
+external/
+
+# Package files
+*.tar.gz
+*.zip
+
+# Log files
+*.log
+
+# Core dumps
+core
+
+# Cache files
+.cache/
