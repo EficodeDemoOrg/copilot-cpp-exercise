@@ -1,0 +1,91 @@
+2025-04-30 13:07:00.150 INFO [Core] (1001) System boot sequence initiated. ID=a1b2
+2025-04-30 13:07:00.731 DEBUG [ConfigLoader] (1001) Reading config file /app/settings.conf. ID=c3d4
+2025-04-30 13:07:01.115 INFO [ConfigLoader] (1001) Configuration applied successfully. ID=e5f6
+2025-04-30 13:07:01.888 INFO [ModuleManager] (1001) Loading module: Network. ID=1a2b
+2025/04/30 13:07:02.555 INFO [Network] (2010) Bad timestamp format here. ID=3c4d
+2025-04-30 13:07:03.101 INFO Network] (2010) Malformed module brackets - missing opening. ID=5e6f
+2025-04-30 13:07:03.905 INFO [Database (2055) Malformed module brackets - missing closing. ID=7a8b
+2025-04-30 13:07:04.610 DEBUG [Database] (2055) Attempting connection to db_primary. ID=9c0d
+2025-04-30 13:07:05.001 INFO [Database] 2055) Malformed thread ID - missing opening paren. ID=1e2f
+2025-04-30 13:07:05.833 INFO [Database] (2055 Malformed thread ID - missing closing paren. ID=3a4b
+2025-04-30 13:07:06.559 INFO [Database] (ABCD) Non-numeric thread ID. ID=5c6d
+2025-04-30 13:07:07.222 INFO [Database] () Empty thread ID. ID=7e8f
+2025-04-30 13:07:07.901 INFO [Database] (2055) Database connection established. Pool ready. ID=9a0b
+2025-04-30 13:07:08.405 INFO [ModuleManager] (1001) Loading module: Auth. ID=1c2d
+2025-04-30 13:07:08.999 INFO [Auth] (3015) Authentication service started. ID=3e4f
+Completely unstructured line of text here.
+2025-04-30 13:07:10.015 INFO [ModuleManager] (1001) Loading module: WorkerPool. ID=5a6b
+
+2025-04-30 13:07:11.501 INFO [WorkerPool] (4010) Worker pool initialized with 4 threads. ID=7c8d
+2025-04-30 13:07:11.502 INFO [WorkerPool] (4011) Worker 1 started. ID=9e0f
+2025-04-30 13:07:11.503 INFO [WorkerPool] (4012) Worker 2 started. ID=1a2b
+2025-04-30 13:07:11.504 INFO [WorkerPool] (4013) Worker 3 started. ID=3c4d
+2025-04-30 13:07:11.505 INFO [WorkerPool] (4014) Worker 4 started. ID=5e6f
+2025-04-30 13:07:12.830 INFO [Core] (1001) Initialization complete. System ready. ID=7a8b
+2025-04-30 13:07:13 ERROR [Network] (2011) Missing level here. ID=9c0d
+2025-04-30 13:07:14.555 INF0 [Network] (2011) Misspelled level IN F0. ID=1e2f
+2025-04-30 13:07:15.931 INFO [Network] (2011) Accepted connection from 192.168.1.100. ConnID=cx01. ID=3a4b
+2025-04-30 13:07:16.444 DEBUG [WorkerPool] (4011) Assigned request from cx01 to worker 1. ID=5c6d
+2025-04-30 13:07:16.989 DEBUG [Auth] (4011) Processing auth request for ConnID=cx01. ID=7e8f
+2025-04-30 13:07:17.615 INFO [Auth] (4011) User 'testuser' authenticated successfully. ConnID=cx01. ID=9a0b
+2025-04-30 13:07:18.101 DEBUG [Network] (2011) Sending success response to ConnID=cx01. ID=1c2d
+2025-04-30 13:07:18.999 INFO [Network] (2012) Accepted connection from 192.168.1.101. ConnID=cx02. ID=3e4f
+   Leading whitespace on this line. 2025-04-30 13:07:19.501 DEBUG [WorkerPool] (4012) Assigned request from cx02 to worker 2. ID=5a6b
+2025-04-30 13:07:20.111 DEBUG [Database] (4012) Handling data query for ConnID=cx02. ID=7c8d
+2025-04-30 13:07:20.830 WARN [Database] (4012) Query took longer than expected: 715ms. ConnID=cx02. ID=9e0f
+2025-04-30 13:07:21.333 INFO [WorkerPool] (4012) Request completed for ConnID=cx02. ID=1a2b
+2025-04-30 13:07:21.999 DEBUG [Network] (2012) Sending data response to ConnID=cx02. Size=1024 bytes. ID=3c4d
+Just a message like simple format
+2025-04-30 13:07:23 INFO Message like medium format
+2025-04-30 13:07:24.510 ERROR [Auth] (4013) Invalid token received from 192.168.1.100 on ConnID=cx01. ID=5e6f
+2025-04-30 13:07:25.055 WARN [Network] (2011) Dropping connection due to auth failure. ConnID=cx01. ID=7a8b
+
+2025-04-30 13:07:26.301 CRITICAL [Core] (1001) Unhandled exception caught in main loop! Details follow. ID=9c0d
+2025-04-30 13:07:26.302 ERROR [Core] (1001) Exception details: std::bad_alloc - Memory allocation failed. ID=1e2f
+2025-04-30 13:07:27.001 INFO [Core] (1001) Attempting graceful shutdown... ID=3a4b
+2025-04-30 13:07:27.555 INFO [WorkerPool] (1030) Signalling worker threads to stop... ID=5c6d
+2025-04-30 13:07:27.556 DEBUG [WorkerPool] (4011) Worker 1 received stop signal. ID=7e8f
+2025-04-30 13:07:27.557 DEBUG [WorkerPool] (4012) Worker 2 received stop signal. ID=9a0b
+2025-04-30 13:07:27.558 DEBUG [WorkerPool] (4013) Worker 3 received stop signal. ID=1c2d
+2025-04-30 13:07:27.559 DEBUG [WorkerPool] (4014) Worker 4 received stop signal. ID=3e4f
+2025-04-30 13:07:28.101 INFO [Network] (2012) Closing connection ConnID=cx02. ID=5a6b
+2025-04-30 13:07:28.888 INFO [NetworkInterface] (1010) Stopping listener... ID=7c8d
+2025-04-30 13:07:29.501 INFO [Database] (1005) Closing database connections... ID=9e0f
+2025-04-30 13:07:30.111 INFO [Core] (1001) Shutdown complete. ID=1a2b
+2025-04-30 13:07:30.833 INFO [NewModule] (5001) Valid entry after potential crash log lines. ID=3c4d
+2025-04-30 13:07:31.405 WARN [OldModule] (6002) Another valid entry. ID=5e6f
+This line is invalid.
+2025-04-30 13:07:32.615 INFO [Core] (1001) Yet another valid one. ID=7a8b
+2025-04-30 13:07:33.111 INFO [Auth] (3015) Checking session status. ID=9c0d
+2025-04-30 13:07:33.888 DEBUG [Database] (2056) Fetching user roles for admin. ID=1e2f
+2025-04-30 13:07:34.505 TRACE [NetworkInterface] (1015) Polling for incoming data. ID=3a4b
+2025-04-30 13:07:35.115 WARN [ConfigLoader] (1001) Deprecated configuration key 'old_setting' found. ID=5c6d
+2025-04-30 13:07:35.830 INFO [Reporting] (7010) Generating monthly report. ID=7e8f
+2025-04-30 13:07:36.401 DEBUG [Reporting] (7010) Aggregating data from source A. ID=9a0b
+2025-04-30 13:07:37.011 ERROR [Reporting] (7010) Source B connection failed. ID=1c2d
+2025-04-30 13:07:37.555 INFO [Reporting] (7010) Report generation completed with partial data. ID=3e4f
+2025-04-30 13:07:38.111 DEBUG [WorkerPool] (4011) Worker 1 idle. ID=5a6b
+2025-04-30 13:07:38.888 DEBUG [WorkerPool] (4012) Worker 2 idle. ID=7c8d
+2025-04-30 13:07:39.505 INFO [Scheduler] (1002) Running health check task. ID=9e0f
+2025-04-30 13:07:40.115 DEBUG [HealthCheck] (1002) Checking Database connection... OK. ID=1a2b
+2025-04-30 13:07:40.830 DEBUG [HealthCheck] (1002) Checking Cache service... WARNING: High Latency. ID=3c4d
+2025-04-30 13:07:41.401 WARN [Scheduler] (1002) Health check completed with warnings. ID=5e6f
+2025-04-30 13:07:42.011 INFO [Auth] (3016) Token refresh request for user 'kaisa'. ID=7a8b
+2025-04-30 13:07:42.555 INFO [Auth] (3016) Token refreshed successfully. ID=9c0d
+2025-04-30 13:07:43.111 TRACE [Database] (2057) Preparing statement for user lookup. ID=1e2f
+2025-04-30 13:07:43.888 INFO [Core] (1001) Normal operations continuing. ID=3a4b
+      Valid entry preceded by only whitespace line.
+2025-04-30 13:07:45.001 INFO [UI] (8001) User clicked 'Save' button. ID=5c6d
+2025-04-30 13:07:45.505 DEBUG [Core] (8001) Saving user preferences. ID=7e8f
+2025-04-30 13:07:46.115 INFO [Core] (8001) Preferences saved. ID=9a0b
+2025-04-30 13:07:46.830 ERROR [NetworkInterface] (1016) Failed to bind UDP socket: Address already in use. ID=1c2d
+2025-04-30 13:07:47.401 CRITICAL [Core] (1001) Cannot start UDP service. Feature disabled. ID=3e4f
+2025-04-30 13:07:48.011 DEBUG [AuthService] (1021) Cleaning up internal session cache. ID=5a6b
+2025-04-30 13:07:48.555 INFO [AuthService] (1021) Session cache cleanup complete. ID=7c8d
+2025-04-30 13:07:49.111 INFO [ModuleManager] (1001) Checking for plugin updates... ID=9e0f
+2025-04-30 13:07:49.888 INFO [ModuleManager] (1001) No new plugins found. ID=1a2b
+2025-04-30 13:07:50.505 WARN [Database] (2058) Connection pool size nearing limit. Used 13/15. ID=3c4d
+2025-04-30 13:07:51.115 DEBUG [WorkerPool] (4013) Worker 3 idle. ID=5e6f
+2025-04-30 13:07:51.830 DEBUG [WorkerPool] (4014) Worker 4 idle. ID=7a8b
+2025-04-30 13:07:52.401 INFO [Scheduler] (1002) Next scheduled task: LogRotation in 1 hour. ID=9c0d
+2025-04-30 13:07:53.011 TRACE [Core] (1001) Main loop idle tick. ID=1e2f
