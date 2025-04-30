@@ -86,17 +86,97 @@ CMakeFiles/log_analyzer.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/main.cpp -o CMakeFiles/log_analyzer.dir/src/main.cpp.s
 
+CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
+CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o: /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_entry.cpp
+CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o -MF CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_entry.cpp
+
+CMakeFiles/log_analyzer.dir/src/log_entry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/log_analyzer.dir/src/log_entry.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_entry.cpp > CMakeFiles/log_analyzer.dir/src/log_entry.cpp.i
+
+CMakeFiles/log_analyzer.dir/src/log_entry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/log_entry.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_entry.cpp -o CMakeFiles/log_analyzer.dir/src/log_entry.cpp.s
+
+CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
+CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o: /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_parser.cpp
+CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o -MF CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_parser.cpp
+
+CMakeFiles/log_analyzer.dir/src/log_parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/log_analyzer.dir/src/log_parser.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_parser.cpp > CMakeFiles/log_analyzer.dir/src/log_parser.cpp.i
+
+CMakeFiles/log_analyzer.dir/src/log_parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/log_parser.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_parser.cpp -o CMakeFiles/log_analyzer.dir/src/log_parser.cpp.s
+
+CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
+CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o: /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_filter.cpp
+CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o -MF CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_filter.cpp
+
+CMakeFiles/log_analyzer.dir/src/log_filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/log_analyzer.dir/src/log_filter.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_filter.cpp > CMakeFiles/log_analyzer.dir/src/log_filter.cpp.i
+
+CMakeFiles/log_analyzer.dir/src/log_filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/log_filter.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_filter.cpp -o CMakeFiles/log_analyzer.dir/src/log_filter.cpp.s
+
+CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
+CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o: /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_reporter.cpp
+CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o -MF CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_reporter.cpp
+
+CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_reporter.cpp > CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.i
+
+CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_reporter.cpp -o CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.s
+
+CMakeFiles/log_analyzer.dir/src/utils.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
+CMakeFiles/log_analyzer.dir/src/utils.cpp.o: /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/utils.cpp
+CMakeFiles/log_analyzer.dir/src/utils.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/log_analyzer.dir/src/utils.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/utils.cpp.o -MF CMakeFiles/log_analyzer.dir/src/utils.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/utils.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/utils.cpp
+
+CMakeFiles/log_analyzer.dir/src/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/log_analyzer.dir/src/utils.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/utils.cpp > CMakeFiles/log_analyzer.dir/src/utils.cpp.i
+
+CMakeFiles/log_analyzer.dir/src/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/utils.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/utils.cpp -o CMakeFiles/log_analyzer.dir/src/utils.cpp.s
+
 # Object files for target log_analyzer
 log_analyzer_OBJECTS = \
-"CMakeFiles/log_analyzer.dir/src/main.cpp.o"
+"CMakeFiles/log_analyzer.dir/src/main.cpp.o" \
+"CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o" \
+"CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o" \
+"CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o" \
+"CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o" \
+"CMakeFiles/log_analyzer.dir/src/utils.cpp.o"
 
 # External object files for target log_analyzer
 log_analyzer_EXTERNAL_OBJECTS =
 
 log_analyzer: CMakeFiles/log_analyzer.dir/src/main.cpp.o
+log_analyzer: CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o
+log_analyzer: CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o
+log_analyzer: CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o
+log_analyzer: CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o
+log_analyzer: CMakeFiles/log_analyzer.dir/src/utils.cpp.o
 log_analyzer: CMakeFiles/log_analyzer.dir/build.make
 log_analyzer: CMakeFiles/log_analyzer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable log_analyzer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable log_analyzer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/log_analyzer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

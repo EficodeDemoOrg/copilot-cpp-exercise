@@ -4,5 +4,35 @@
   "command": "/usr/bin/clang++  -I/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/include -g -std=c++17 -arch arm64 -o CMakeFiles/log_analyzer.dir/src/main.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/main.cpp",
   "file": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/main.cpp",
   "output": "CMakeFiles/log_analyzer.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build",
+  "command": "/usr/bin/clang++  -I/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/include -g -std=c++17 -arch arm64 -o CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_entry.cpp",
+  "file": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_entry.cpp",
+  "output": "CMakeFiles/log_analyzer.dir/src/log_entry.cpp.o"
+},
+{
+  "directory": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build",
+  "command": "/usr/bin/clang++  -I/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/include -g -std=c++17 -arch arm64 -o CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_parser.cpp",
+  "file": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_parser.cpp",
+  "output": "CMakeFiles/log_analyzer.dir/src/log_parser.cpp.o"
+},
+{
+  "directory": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build",
+  "command": "/usr/bin/clang++  -I/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/include -g -std=c++17 -arch arm64 -o CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_filter.cpp",
+  "file": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_filter.cpp",
+  "output": "CMakeFiles/log_analyzer.dir/src/log_filter.cpp.o"
+},
+{
+  "directory": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build",
+  "command": "/usr/bin/clang++  -I/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/include -g -std=c++17 -arch arm64 -o CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_reporter.cpp",
+  "file": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/log_reporter.cpp",
+  "output": "CMakeFiles/log_analyzer.dir/src/log_reporter.cpp.o"
+},
+{
+  "directory": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build",
+  "command": "/usr/bin/clang++  -I/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/include -g -std=c++17 -arch arm64 -o CMakeFiles/log_analyzer.dir/src/utils.cpp.o -c /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/utils.cpp",
+  "file": "/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/src/utils.cpp",
+  "output": "CMakeFiles/log_analyzer.dir/src/utils.cpp.o"
 }
 ]

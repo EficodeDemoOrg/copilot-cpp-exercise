@@ -85,12 +85,12 @@ clean: CMakeFiles/log_analyzer.dir/clean
 CMakeFiles/log_analyzer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=1,2 "Built target log_analyzer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target log_analyzer"
 .PHONY : CMakeFiles/log_analyzer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/log_analyzer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/log_analyzer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles 0
 .PHONY : CMakeFiles/log_analyzer.dir/rule
@@ -102,7 +102,7 @@ log_analyzer: CMakeFiles/log_analyzer.dir/rule
 # codegen rule for target.
 CMakeFiles/log_analyzer.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=1,2 "Finished codegen for target log_analyzer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/rasmuspaltschik/Projects/Astorg/c++/log-parser/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target log_analyzer"
 .PHONY : CMakeFiles/log_analyzer.dir/codegen
 
 # clean rule for target.

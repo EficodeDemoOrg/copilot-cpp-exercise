@@ -6,26 +6,25 @@ This project is a command-line utility written in C++ designed to parse, filter,
 
 **Target Audience:** C++ developers, learners practicing C++ and build systems, demo for GitHub Copilot.
 
-## Features (Core Scope)
+## Features (Implemented)
 
-1.  **Parsing (Progressive):**
-    * Develop parsing logic incrementally to handle log files of varying complexity, using the provided sample files (`simple_events.log`, `standard_app.log`, `detailed_system.log`).
-    * Target formats include:
-        * **Simple (1-column):** Raw `Message Body`.
-        * **Medium (3-column):** `YYYY-MM-DD HH:MM:SS LEVEL Message Body`.
-        * **Complex (5+ column):** `YYYY-MM-DD HH:MM:SS.ms LEVEL [Module] (ThreadID) Message Body [OptionalKey=Value,...]`.
-    * Store parsed data into a structured `LogEntry` object (which will evolve as more fields are handled).
+1.  **Parsing:**
+    * Parses log files of varying complexity, supporting the provided sample files (`simple_events.log`, `standard_app.log`, `detailed_system.log`).
+    * Compatible with formats including:
+        * **Simple:** Raw `Message Body` with basic level prefix (e.g., `[INFO] System starting up`).
+        * **Complex:** `YYYY-MM-DD HH:MM:SS.ms LEVEL [Module] (ThreadID) Message Body`.
+    * Stores parsed data into structured `LogEntry` objects with accessible fields.
 2.  **Filtering:**
-    * Filter log entries based on criteria provided via command-line arguments (applies when relevant fields are parsed, i.e., for medium/complex formats):
-        * Log Level (`--level`)
-        * Module Name (`--module`)
-        * Keyword in Message Body (`--keyword`)
-    * (Future: Allow combining filters).
+    * Filter log entries based on criteria provided via command-line arguments:
+        * Log Level (`--level`) - Filter by severity level (TRACE, DEBUG, INFO, WARN, ERROR, CRITICAL)
+        * Keyword in Message Body (`--keyword`) - Filter entries containing a specific word or phrase
+    * Multiple filters can be combined (e.g., `--level=WARN --keyword=disk` to find WARN level messages about disk)
 3.  **Reporting:**
-    * Print the original or filtered log entries to the standard console output in a readable format.
+    * Outputs filtered log entries to the console in a readable format
+    * Supports different output formats (currently `--format=simple` and `--format=detailed`)
 4.  **Command-Line Interface (CLI):**
-    * Accept the input log file path as a command-line argument.
-    * Accept filter criteria via command-line arguments (e.g., `--level ERROR`, `--module Database`, `--keyword "failed"`).
+    * Provides a user-friendly interface via command-line arguments
+    * Includes help documentation (`--help`) for quick reference
 
 ## Architecture
 
@@ -92,31 +91,42 @@ Execute the compiled program from your terminal, providing the path to a log fil
     ```
 * Filter by log level:
     ```bash
-    ./build/log_analyzer data/detailed_system.log --level ERROR
-    ```
-* Filter by module:
-    ```bash
-    ./build/log_analyzer data/detailed_system.log --module NetworkInterface
+    ./build/log_analyzer data/detailed_system.log --level=ERROR
     ```
 * Filter by keyword in the message body:
     ```bash
-    ./build/log_analyzer data/detailed_system.log --keyword "connection closed"
+    ./build/log_analyzer data/detailed_system.log --keyword=connection
     ```
-* Combine filters (current implementation likely processes sequentially):
+* Specify output format:
     ```bash
-    ./build/log_analyzer data/detailed_system.log --level WARN --module Database
+    ./build/log_analyzer data/detailed_system.log --format=detailed
+    ```
+* Combine filters:
+    ```bash
+    ./build/log_analyzer data/detailed_system.log --level=WARN --keyword=disk
+    ```
+* Show help menu:
+    ```bash
+    ./build/log_analyzer --help
     ```
 
 ## Input Format Details
 
-* The parser expects lines following this structure:
-    `YYYY-MM-DD HH:MM:SS.ms LEVEL [Module] (ThreadID) MessageBody [OptionalKey=Value,...]`
-* **Timestamp:** Includes date, time, and milliseconds.
-* **LEVEL:** One of `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`, `CRITICAL`.
-* **Module:** Enclosed in `[]`.
-* **ThreadID:** Enclosed in `()`.
-* **MessageBody:** The rest of the primary message string.
-* **Optional Key-Value Pairs:** Enclosed in `[]` at the end of the line (parsing for these might be part of future extensions).
+The parser currently supports multiple log formats:
+
+### Simple Format (simple_events.log)
+* Basic log entries with level and message
+* Format: `[LEVEL] Message Body`
+* **Examples:**
+  * `[INFO] System starting up`
+  * `[ERROR] Cannot connect to SMTP server 'mail.internal'`
+
+### Detailed Format (detailed_system.log)
+* More complex logs with timestamps, module information, and thread IDs
+* Format: `YYYY-MM-DD HH:MM:SS.ms LEVEL [Module] (ThreadID) MessageBody`
+* **LEVEL:** Supported levels are `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`, `CRITICAL`
+* **Example:**
+  * `2025-04-29 13:07:52.105 INFO [Core] (1001) System starting up. Process ID: 5678. Version: 3.0.1-beta`
 
 ## Sample Data
 
@@ -148,15 +158,26 @@ It is recommended to develop and test the parsing logic progressively, starting 
 
 ## Potential Extensions
 
-This project is designed to be extensible. Some ideas for future development include:
+While the core functionality is working well, there are several opportunities for enhancement:
 
-* Implement more advanced filtering (time ranges, regex, AND/OR logic).
-* Add statistical analysis features (counts, frequencies).
-* Support different output formats (CSV, JSON).
-* Improve parsing error handling for malformed lines.
-* Add comprehensive unit tests.
-* Read configuration from a file.
-* Optimize for large file handling.
+* **Filtering Enhancements:**
+  * Add module filtering (`--module=ModuleName`) to filter by specific system components
+  * Implement time-based filtering (`--from=YYYY-MM-DD`, `--to=YYYY-MM-DD`) 
+  * Support regex patterns for more powerful text searches
+  * Add inclusive/exclusive filter combinations (AND/OR logic)
+* **Output Enhancements:**
+  * Enhance the `detailed` format to show additional fields like timestamp, module, thread ID
+  * Add more output formats (CSV, JSON, HTML)
+  * Support output redirection to files
+* **Analysis Features:**
+  * Add statistical analysis (error counts by module, message frequency)
+  * Generate summaries and aggregated reports
+  * Visualize log patterns and trends
+* **Performance & Robustness:**
+  * Optimize for large file handling with stream processing
+  * Improve error handling for malformed log entries
+  * Add comprehensive unit tests
+  * Support configuration via external files
 
 ## Technology Stack
 

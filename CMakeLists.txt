@@ -8,9 +8,18 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF) # Avoid compiler-specific extensions
 
-# Add the executable target, linking main.cpp initially
-# We will add more source files later
-add_executable(log_analyzer src/main.cpp)
+# Add all source files
+set(SOURCES
+    src/main.cpp
+    src/log_entry.cpp
+    src/log_parser.cpp
+    src/log_filter.cpp
+    src/log_reporter.cpp
+    src/utils.cpp
+)
+
+# Add the executable target with all source files
+add_executable(log_analyzer ${SOURCES})
 
 # Tell the target where to find header files (#include <...>)
 # Targets the 'include' directory we created
