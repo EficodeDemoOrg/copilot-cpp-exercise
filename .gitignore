@@ -1,0 +1,93 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.elf
+
+# Build directories
+build/
+bin/
+lib/
+out/
+Debug/
+Release/
+x64/
+x86/
+
+# CMake specific files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# IDE specific files
+## Visual Studio
+.vs/
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+ipch/
+
+## VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## CLion
+.idea/
+*.iml
+*.iws
+cmake-build-*/
+
+# MacOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Dependency directories
+vcpkg_installed/
+packages/
+deps/
+
+# Conan specific
+conanbuildinfo.*
+conaninfo.txt
+conan.lock
